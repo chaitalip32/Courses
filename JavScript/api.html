@@ -1,0 +1,23 @@
+<button onclick="showOutput()">Fetch Data</button>
+<div id="result"></div>
+
+<script>
+async function fetchData(){
+    try {
+        let response = await fetch('https://api.example.com/data')
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`)
+        }
+        return await response.json()
+    } catch(error) {
+        console.error("Error:", error)
+        return null
+    }
+}
+
+async function showOutput() {
+    let data = await fetchData()
+    document.getElementById("result").innerText =
+        JSON.stringify(data, null, 2)
+}
+</script>
