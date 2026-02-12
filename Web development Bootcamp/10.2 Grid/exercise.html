@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-columns: auto 400px minmax(200px, 500px);
+            grid-auto-rows: 50px;
+
+            gap: 2px;
+            background-color: gainsboro;
+
+        }
+        .grid-items{
+            background-color: green;
+            /* border: 3px solid red; */
+            /* gap: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+        <div class="grid-items">
+            <p>kjdaed</p>
+        </div>
+    </div>
+</body>
+</html>

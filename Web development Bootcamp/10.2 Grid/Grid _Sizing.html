@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 200px 400px; */
+            /* grid-template-rows: 100px 200px; */
+            /* grid-template-columns: 200px auto; */
+            /* grid-template-rows: 100px auto; */
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(2, 100px);
+            /* grid-auto-rows: 300px; */
+            /* grid-auto-columns: 100px; */
+
+            /* grid-template-rows: 100px 400px; */
+            /* grid-template-columns: 200px minmax(500px,800px); */
+            
+
+        }
+        .boxes{
+
+            background-color: blueviolet;   
+            border: 2px solid blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="boxes">1</div>
+        <div class="boxes">2</div>
+        <div class="boxes">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatibus accusamus beatae inventore enim aut corrupti, id fuga blanditiis culpa, mollitia tenetur earum quaerat. Provident magni quibusdam non eveniet perferendis!</p>
+        </div>
+        <div class="boxes">4</div>
+        <div class="boxes">5</div>
+        <div class="boxes">6</div>
+        <div class="boxes">6</div>
+        <div class="boxes">5</div>
+        <div class="boxes">6</div>
+        <div class="boxes">6</div>
+
+    </div>
+</body>
+</html>
